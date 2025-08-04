@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header */
+#header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input section */
+#todo-form {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#name-form{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#input_box {
+    padding: 12px 15px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+#input_name{
+    padding: 12px 15px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+#input-button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#input-button:hover {
+    background-color: #45a049;
+}
+
+/* Lists container */
+#todo-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* List box styles */
+#todo-container > div {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    width: 300px;
+    min-height: 300px;
+    padding: 20px;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+#todo-container > div:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Headings */
+#todo-container h2 {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    background-color: #eee;
+    color: #444;
+}
+
+/* Task items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
+}
+
+li label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.delete-btn {
+    color: #ff4444;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.delete-btn:hover {
+    color: #cc0000;
+}
+
+input[type="checkbox"] {
+    accent-color: #4CAF50;
+}

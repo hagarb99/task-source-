@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+         <div id="header">
+        <h1 id="todo">To Do List</h1>
+        </div>
+        <div id="name-form">
+        <input type="text" class="input-item" id="input_name" placeholder="write your name" />
+        <button id="input-button" onclick="savename()" >Add</button>
+        </div>
+        <div id="todo-form">
+    <input type="text" name="input_box" id="input_box" placeholder="Add Task" />
+    <button id="input-button">Add</button>
+</div>
+<div id="todo-container">
+    <div class="box">
+        <h2>Not started</h2>
+        <!-- <ul id="list-not"></ul> -->
+    </div>
+    <div class="box">
+        <h2>In Progress</h2>
+        <!-- <ul id="list-in" ondrop="drop(event)" ondragover="allowDrop(event)"></ul> -->
+    </div>
+    <div class="box">
+        <h2>Completed</h2>
+        <!-- <ul id="list-com" ondrop="drop(event)" ondragover="allowDrop(event)"></ul> -->
+    </div>
+</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
